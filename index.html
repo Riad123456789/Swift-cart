@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- -- Navbar -- -->
+    <div
+      class="flex items-center justify-between px-4 sm:px-8 md:px-16 lg:px-64 py-3 shadow-md relative"
+    >
+      <h1 class="text-lg font-bold text-blue-600">SwiftCart</h1>
+      <div class="hidden md:flex items-center gap-7 font-medium">
+        <p class="cursor-pointer hover:text-blue-600">Home</p>
+        <p class="cursor-pointer hover:text-blue-600">Products</p>
+        <p class="cursor-pointer hover:text-blue-600">About</p>
+        <p class="cursor-pointer hover:text-blue-600">Contact</p>
+      </div>
+
+      <div class="flex items-center gap-4">
+        <i class="fa-solid fa-cart-shopping text-xl cursor-pointer"></i>
+        <button id="menu-btn" class="md:hidden text-2xl">☰</button>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden absolute top-14 left-0 w-full bg-white shadow-md md:hidden z-50"
+      >
+        <div class="flex flex-col items-center gap-4 py-4 font-medium">
+          <p class="cursor-pointer hover:text-blue-600">Home</p>
+          <p class="cursor-pointer hover:text-blue-600">Products</p>
+          <p class="cursor-pointer hover:text-blue-600">About</p>
+          <p class="cursor-pointer hover:text-blue-600">Contact</p>
+        </div>
+      </div>
+    </div>
+    <!-- -- Banner -- -->
+
+    <div class="relative">
+      <img
+        class="w-full h-[500px] object-cover"
+        src="Assets/banner-image.png"
+        alt=""
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-slate-800 to-black/30"
+      ></div>
+      <div class="space-y-5 md:w-[1000px] px-3 md:px-64 text-white absolute top-[35%] ">
+        <h1 class="text-3xl md:text-4xl font-extrabold">Best Collection For you</h1>
+        <p class="text-sm font-normal">
+          Discover the latest trends in fashion, electronics, and more. Shop
+          with confidence and style at SwiftCart
+        </p>
+        <button class="btn btn-active btn-primary text-sm">Shop Now</button>
+      </div>
+    </div>
+
+    <!-- -- Why Choose Us -- -->
+
+    <section class="py-12 bg-gray-50 px-5 md:px-64">
+      <div class="text-center mb-10">
+        <h1 class="text-3xl font-bold">Why Choose Us</h1>
+        <p class="text-gray-600 mt-2 max-w-xl mx-auto">
+          We provide a seamless shopping experience with reliable, high-quality
+          services.
+        </p>
+      </div>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-6 max-w-6xl mx-auto pt-12"
+      >
+        <div class="relative rounded-lg bg-white p-6 shadow">
+          <div
+            class="absolute -top-5 left-5 border-4 border-white shadow-md rounded-md bg-blue-100 text-blue-500 w-12 h-12 flex items-center justify-center text-lg"
+          >
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div class="py-5 space-y-3">
+            <h2 class="text-base font-semibold">Fast Delivery</h2>
+            <p class="text-gray-600 text-sm">
+              Get your orders delivered quickly and safely to your doorstep.
+            </p>
+          </div>
+        </div>
+
+        <div class="relative rounded-lg bg-white p-6 shadow">
+          <div
+            class="absolute -top-5 left-5 border-4 border-white shadow-md rounded-md bg-blue-100 text-blue-500 w-12 h-12 flex items-center justify-center text-lg"
+          >
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div class="py-5 space-y-3">
+            <h2 class="text-base font-semibold">Fast Delivery</h2>
+            <p class="text-gray-600 text-sm">
+              Get your orders delivered quickly and safely to your doorstep.
+            </p>
+          </div>
+        </div>
+
+        <div class="relative rounded-lg bg-white p-6 shadow">
+          <div
+            class="absolute -top-5 left-5 border-4 border-white shadow-md rounded-md bg-blue-100 text-blue-500 w-12 h-12 flex items-center justify-center text-lg"
+          >
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div class="py-5 space-y-3">
+            <h2 class="text-base font-semibold">Fast Delivery</h2>
+            <p class="text-gray-600 text-sm">
+              Get your orders delivered quickly and safely to your doorstep.
+            </p>
+          </div>
+        </div>
+
+        <div class="relative rounded-lg bg-white p-6 shadow">
+          <div
+            class="absolute -top-5 left-5 border-4 border-white shadow-md rounded-md bg-blue-100 text-blue-500 w-12 h-12 flex items-center justify-center text-lg"
+          >
+            <i class="fa-solid fa-truck"></i>
+          </div>
+          <div class="py-5 space-y-3">
+            <h2 class="text-base font-semibold">Fast Delivery</h2>
+            <p class="text-gray-600 text-sm">
+              Get your orders delivered quickly and safely to your doorstep.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Trending Scetion -- -->
+
+    <section class="py-12">
+      <div class="lg:px-64 px-6">
+        <h1 class="text-3xl font-extrabold mb-8">Trending Now</h1>
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8"
+        >
+          <div
+            class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition flex flex-col"
+          >
+            <img
+              src="Assets/download.jpg"
+              alt="Product 1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p
+                class="bg-blue-300 text-[10px] rounded-lg px-2 text-blue-700 font-semibold"
+              >
+                Men's clothing
+              </p>
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-[#fed507]"></i>
+                <p class="text-xs">3.9 (120)</p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <p class="text-xs font-semibold">
+                Mens Casual Premium Slim Fit T-Shirts
+              </p>
+              <h1 class="pt-1 text-sm font-semibold">$109.30</h1>
+            </div>
+            <div class="flex justify-between items-center gap-3 mt-auto">
+              <button
+                class="flex-1 flex items-center justify-center gap-2 text-xs border border-gray-300 rounded-md px-3 py-1 hover:bg-gray-100 transition"
+              >
+                <i class="fa-regular fa-eye"></i>
+                Details
+              </button>
+              <button
+                class="flex-1 flex items-center justify-center gap-2 text-xs bg-blue-500 text-white rounded-md px-3 py-1 hover:bg-blue-600 transition"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition flex flex-col"
+          >
+            <img
+              src="Assets/download.jpg"
+              alt="Product 1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p
+                class="bg-blue-300 text-[10px] rounded-lg px-2 text-blue-700 font-semibold"
+              >
+                Men's clothing
+              </p>
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-[#fed507]"></i>
+                <p class="text-xs">3.9 (120)</p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <p class="text-xs font-semibold">
+                Mens Casual Premium Slim Fit T-Shirts
+              </p>
+              <h1 class="pt-1 text-sm font-semibold">$109.30</h1>
+            </div>
+            <div class="flex justify-between items-center gap-3 mt-auto">
+              <button
+                class="flex-1 flex items-center justify-center gap-2 text-xs border border-gray-300 rounded-md px-3 py-1 hover:bg-gray-100 transition"
+              >
+                <i class="fa-regular fa-eye"></i>
+                Details
+              </button>
+              <button
+                class="flex-1 flex items-center justify-center gap-2 text-xs bg-blue-500 text-white rounded-md px-3 py-1 hover:bg-blue-600 transition"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition flex flex-col"
+          >
+            <img
+              src="Assets/download.jpg"
+              alt="Product 1"
+              class="w-full h-48 object-cover rounded-md mb-4"
+            />
+            <div class="flex items-center justify-between mb-2">
+              <p
+                class="bg-blue-300 text-[10px] rounded-lg px-2 text-blue-700 font-semibold"
+              >
+                Men's clothing
+              </p>
+              <div class="flex items-center gap-1">
+                <i class="fa-solid fa-star text-[#fed507]"></i>
+                <p class="text-xs">3.9 (120)</p>
+              </div>
+            </div>
+            <div class="mb-4">
+              <p class="text-xs font-semibold">
+                Mens Casual Premium Slim Fit T-Shirts
+              </p>
+              <h1 class="pt-1 text-sm font-semibold">$109.30</h1>
+            </div>
+            <div class="flex justify-between items-center gap-3 mt-auto">
+              <button
+                class="flex-1 flex items-center justify-center gap-2 text-xs border border-gray-300 rounded-md px-3 py-1 hover:bg-gray-100 transition"
+              >
+                <i class="fa-regular fa-eye"></i>
+                Details
+              </button>
+              <button
+                class="flex-1 flex items-center justify-center gap-2 text-xs bg-blue-500 text-white rounded-md px-3 py-1 hover:bg-blue-600 transition"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Foother -- -->
+
+    <footer class="bg-black text-white py-12">
+      <div
+        class="px-6 lg:px-64 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <div>
+          <h1 class="text-2xl font-bold text-blue-500 mb-3">SwiftCart</h1>
+          <p class="text-xs text-gray-400 leading-6">
+            Your one-stop shop for all your fashion and lifestyle needs. Quality
+            products, fast delivery, and excellent support.
+          </p>
+        </div>
+        <div>
+          <h2 class="font-semibold mb-3">Quick Links</h2>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li class="hover:text-white cursor-pointer">Home</li>
+            <li class="hover:text-white cursor-pointer">Products</li>
+            <li class="hover:text-white cursor-pointer">About</li>
+            <li class="hover:text-white cursor-pointer">Contact</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-semibold mb-3">Customer Service</h2>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li class="hover:text-white cursor-pointer">FAQs</li>
+            <li class="hover:text-white cursor-pointer">Shipping</li>
+            <li class="hover:text-white cursor-pointer">Returns</li>
+            <li class="hover:text-white cursor-pointer">Support</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="font-semibold mb-3">Subscribe</h2>
+          <p class="text-sm text-gray-400 mb-4">
+            Subscribe to get special offers and updates.
+          </p>
+          <div class=" md:flex gap-2">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full px-3 py-2 text-sm rounded-md text-black bg-white focus:outline-none"
+            />
+            <button
+              class= "w-full bg-blue-500 px-4 py-2 text-sm rounded-md hover:bg-blue-600 transition"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr class="border-t-2 border-gray-600 my-7 mx-64" />
+
+      <div class="border-gray-700">
+        <div
+          class="px-6 lg:px-64 flex flex-col md:flex-row items-center justify-between gap-4"
+        >
+          <p class="text-sm text-gray-400">
+            © 2026 SwiftCart. All rights reserved.
+          </p>
+          <div class="flex gap-4 text-xl">
+            <i
+              class="fa-brands fa-facebook hover:text-blue-500 cursor-pointer transition"
+            ></i>
+            <i
+              class="fa-brands fa-instagram hover:text-pink-500 cursor-pointer transition"
+            ></i>
+            <i
+              class="fa-brands fa-twitter hover:text-blue-400 cursor-pointer transition"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin hover:text-blue-600 cursor-pointer transition"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById('menu-btn')
+      const menu = document.getElementById('mobile-menu')
+
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden')
+      })
+    </script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
