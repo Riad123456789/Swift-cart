@@ -23,13 +23,19 @@
       <h1 class="text-lg font-bold text-blue-600">SwiftCart</h1>
       <div class="hidden md:flex items-center gap-7 font-medium">
         <p class="cursor-pointer hover:text-blue-600">Home</p>
-        <a href="Allproductspage.html" class="cursor-pointer hover:text-blue-600">Products</a>
+        <a
+          href="Allproductspage.html"
+          class="cursor-pointer hover:text-blue-600"
+          >Products</a
+        >
         <p class="cursor-pointer hover:text-blue-600">About</p>
         <p class="cursor-pointer hover:text-blue-600">Contact</p>
       </div>
 
       <div class="flex items-center gap-4">
-        <i class="fa-solid fa-cart-shopping text-xl cursor-pointer"></i>
+        <a href="Addtocart.html">
+          <i class="fa-solid fa-cart-shopping text-xl cursor-pointer"></i
+        ></a>
         <button id="menu-btn" class="md:hidden text-2xl">☰</button>
       </div>
       <div
@@ -37,8 +43,12 @@
         class="hidden absolute top-14 left-0 w-full bg-white shadow-md md:hidden z-50"
       >
         <div class="flex flex-col items-center gap-4 py-4 font-medium">
-          <p class="cursor-pointer hover:text-blue-600">Home</p>
-          <p class="cursor-pointer hover:text-blue-600">Products</p>
+          <a class="cursor-pointer hover:text-blue-600">Home</a>
+          <a
+            href="Allproductspage.html"
+            class="cursor-pointer hover:text-blue-600"
+            >Products</a
+          >
           <p class="cursor-pointer hover:text-blue-600">About</p>
           <p class="cursor-pointer hover:text-blue-600">Contact</p>
         </div>
@@ -101,12 +111,12 @@
           <div
             class="absolute -top-5 left-5 border-4 border-white shadow-md rounded-md bg-blue-100 text-blue-500 w-12 h-12 flex items-center justify-center text-lg"
           >
-            <i class="fa-solid fa-truck"></i>
+            <i class="fa-solid fa-headphones"></i>
           </div>
           <div class="py-5 space-y-3">
-            <h2 class="text-base font-semibold">Fast Delivery</h2>
+            <h2 class="text-base font-semibold">24/7 Support</h2>
             <p class="text-gray-600 text-sm">
-              Get your orders delivered quickly and safely to your doorstep.
+              Our support team is available around the clock to assist you.
             </p>
           </div>
         </div>
@@ -115,12 +125,13 @@
           <div
             class="absolute -top-5 left-5 border-4 border-white shadow-md rounded-md bg-blue-100 text-blue-500 w-12 h-12 flex items-center justify-center text-lg"
           >
-            <i class="fa-solid fa-truck"></i>
+            <i class="fa-solid fa-shield-halved"></i>
           </div>
           <div class="py-5 space-y-3">
-            <h2 class="text-base font-semibold">Fast Delivery</h2>
+            <h2 class="text-base font-semibold">Secure payment</h2>
             <p class="text-gray-600 text-sm">
-              Get your orders delivered quickly and safely to your doorstep.
+              Experience safe and secure transactions with our encrypted payment
+              systems.
             </p>
           </div>
         </div>
@@ -129,12 +140,12 @@
           <div
             class="absolute -top-5 left-5 border-4 border-white shadow-md rounded-md bg-blue-100 text-blue-500 w-12 h-12 flex items-center justify-center text-lg"
           >
-            <i class="fa-solid fa-truck"></i>
+            <i class="fa-solid fa-arrow-rotate-left"></i>
           </div>
           <div class="py-5 space-y-3">
-            <h2 class="text-base font-semibold">Fast Delivery</h2>
+            <h2 class="text-base font-semibold">easy Returns</h2>
             <p class="text-gray-600 text-sm">
-              Get your orders delivered quickly and safely to your doorstep.
+             Not satisfied? Return your products easily within 30 days.
             </p>
           </div>
         </div>
@@ -221,12 +232,12 @@
         </div>
 
         <div>
-          <h2 class="font-semibold mb-3">Customer Service</h2>
+          <h2 class="font-semibold mb-3">SUPPORT</h2>
           <ul class="space-y-2 text-sm text-gray-400">
             <li class="hover:text-white cursor-pointer">FAQs</li>
             <li class="hover:text-white cursor-pointer">Shipping</li>
             <li class="hover:text-white cursor-pointer">Returns</li>
-            <li class="hover:text-white cursor-pointer">Support</li>
+            <li class="hover:text-white cursor-pointer">Privacy policy</li>
           </ul>
         </div>
         <div>
@@ -269,7 +280,7 @@
             ></i>
           </div>
           <p class="text-sm text-gray-400">
-            © 2026 SwiftCart. All rights reserved.
+            © 2026 SwiftCart, inc. All rights reserved.
           </p>
         </div>
       </div>

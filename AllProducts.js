@@ -11,7 +11,6 @@ const getproducts = () => {
 }
 
 const displayproduct = data => {
-  console.log(data)
  const displayproduct = document.getElementById('AllProducts')
   displayproduct.innerHTML = ''
   data.forEach(product => {
@@ -142,7 +141,7 @@ const showCategories = categories => {
     div.innerHTML = `
       <button 
         onclick="lodedata('${category}')" 
-        class="btn btn-outline btn-primary">
+        class="btn btn-outline btn-sm  md:btn-primary">
         ${category}
       </button>
     `
