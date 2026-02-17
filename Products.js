@@ -5,6 +5,7 @@ const getproducts = () => {
 }
 
 const filterproducts = products => {
+
   const topThree = products
     .filter(product => product.rating.rate >= 4)
     .slice(0, 3)
