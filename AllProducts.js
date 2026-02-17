@@ -10,8 +10,53 @@ const getproducts = () => {
     .then(data => displayproduct(data))
 }
 
+const Loadmodaldata = id => {
+  fetch(`https://fakestoreapi.com/products/${id}`)
+    .then(res => res.json())
+    .then(data => displaymodal(data))
+}
+
+const displaymodal = data => {
+  const modalContent = document.getElementById('modalContain')
+
+  modalContent.innerHTML = `
+ <div class="p-5 space-y-4">
+  <h1 class="text-xl font-bold">
+    ${data.title}
+  </h1>
+  <p class="text-gray-600 text-sm">
+    ${data.description}
+  </p>
+  <div class="flex justify-between items-center">
+    <p class="text-lg font-semibold text-green-600">
+      $${data.price}
+    </p>
+    <p class="text-yellow-500 font-medium">
+      ⭐ ${data.rating.rate}
+    </p>
+  </div>
+  <div class="flex gap-3">
+    <button
+      class="flex-1 border border-gray-300 rounded-md py-2 hover:bg-gray-100 transition"
+    >
+      Buy Now
+    </button>
+
+    <button
+      class="flex-1 bg-blue-500 text-white rounded-md py-2 hover:bg-blue-600 transition"
+    >
+      Add to Cart
+    </button>
+  </div>
+
+</div>
+
+  `
+  document.getElementById('my_modal_5').showModal()
+}
+
 const displayproduct = data => {
- const displayproduct = document.getElementById('AllProducts')
+  const displayproduct = document.getElementById('AllProducts')
   displayproduct.innerHTML = ''
   data.forEach(product => {
     const div = document.createElement('div')
@@ -36,8 +81,8 @@ const displayproduct = data => {
                 <div class="flex items-center gap-1">
                   <i class="fa-solid fa-star text-[#fed507]"></i>
                   <p class="text-xs">${product.rating.rate} (${
-                     product.rating.count
-                  })</p>
+      product.rating.count
+    })</p>
                 </div>
               </div>
               <div class="mb-4 ">
@@ -48,6 +93,7 @@ const displayproduct = data => {
               </div>
               <div class="flex justify-between items-center gap-3 mt-auto">
                 <button
+                onclick="Loadmodaldata(${product.id})"
                   class="flex-1 flex items-center justify-center gap-2 text-xs border border-gray-300 rounded-md px-3 py-1 hover:bg-gray-100 transition"
                 >
                   <i class="fa-regular fa-eye"></i>
@@ -112,6 +158,7 @@ const Displaylodedata = data => {
               </div>
               <div class="flex justify-between items-center gap-3 mt-auto">
                 <button
+                onclick="Loadmodaldata(${product.id})"
                   class="flex-1 flex items-center justify-center gap-2 text-xs border border-gray-300 rounded-md px-3 py-1 hover:bg-gray-100 transition"
                 >
                   <i class="fa-regular fa-eye"></i>

@@ -33,7 +33,9 @@
       </div>
 
       <div class="flex items-center gap-4">
-       <a href="Addtocart.html"><i class="fa-solid fa-cart-shopping text-xl cursor-pointer"></i></a>
+        <a href="Addtocart.html"
+          ><i class="fa-solid fa-cart-shopping text-xl cursor-pointer"></i
+        ></a>
         <button id="menu-btn" class="md:hidden text-2xl">☰</button>
       </div>
       <div
@@ -41,7 +43,9 @@
         class="hidden absolute top-14 left-0 w-full bg-white shadow-md md:hidden z-50"
       >
         <div class="flex flex-col items-center gap-4 py-4 font-medium">
-          <a href="index.html" class="cursor-pointer hover:text-blue-600">Home</a>
+          <a href="index.html" class="cursor-pointer hover:text-blue-600"
+            >Home</a
+          >
           <p class="cursor-pointer hover:text-blue-600">Products</p>
           <p class="cursor-pointer hover:text-blue-600">About</p>
           <p class="cursor-pointer hover:text-blue-600">Contact</p>
@@ -52,20 +56,39 @@
     <section class="px-4 py-8 md:py-10 md:px-64">
       <h1 class="text-center text-2xl font-bold mb-5 md:mb-10">Our Products</h1>
 
-
       <div class="flex flex-wrap items-center justify-center gap-3 md:gap-6">
         <div>
-          <button onclick="getproducts()" class="btn btn-outline btn-sm  md:btn-primary ">All</button>
+          <button
+            onclick="getproducts()"
+            class="btn btn-outline btn-sm md:btn-primary"
+          >
+            All
+          </button>
         </div>
-        <div id="Categories" class=" flex flex-wrap justify-center items-center gap-3 md:gap-6">
-         
-        </div>
+        <div
+          id="Categories"
+          class="flex flex-wrap justify-center items-center gap-3 md:gap-6"
+        ></div>
       </div>
       <div
         id="AllProducts"
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10"
       ></div>
     </section>
+
+    <div>
+      <button class="btn">open modal</button>
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+          <div id="modalContain"></div>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn btn-sm">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    </div>
 
     <!-- -- Foother -- -->
 
